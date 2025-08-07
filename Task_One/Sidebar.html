@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elevoo Task One</title>
+    <link rel="stylesheet" href="Sidebar.css" />
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sideBar_container">
+        
+        <div class="button" id="toggleBtn">
+            <i class="ri-arrow-left-circle-fill"></i>
+        </div>
+              
+       
+        <div class="logo" id="logoContainer">
+            <img src="./assets/Images/Logo/Logo.png.png" alt="Elevoo Logo" id="logoImg" />
+        </div>
+        
+        
+        <div class="sidebar_list" id="sidebarList">
+            <ul>
+                <div class="link_container" data-tooltip="Home">
+                    <li>
+                        <i class="ri-home-line"></i>
+                        <span class="link-text">Home</span>
+                    </li>
+                </div>
+                <div class="link_container" data-tooltip="About Us">
+                    <li>
+                        <i class="ri-user-line"></i>
+                        <span class="link-text">About Us</span>
+                    </li>
+                </div>
+                <div class="link_container" data-tooltip="Services">
+                    <li>
+                        <i class="ri-tools-line"></i>
+                        <span class="link-text">Services</span>
+                    </li>
+                </div>
+                <div class="link_container" data-tooltip="Portfolio/Projects">
+                    <li>
+                        <i class="ri-briefcase-line"></i>
+                        <span class="link-text">Portfolio/Projects</span>
+                    </li>
+                </div>
+                <div class="link_container" data-tooltip="Contact">
+                    <li>
+                        <i class="ri-mail-line"></i>
+                        <span class="link-text">Contact</span>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="sidebar.js"></script>
+  </body>
+</html>

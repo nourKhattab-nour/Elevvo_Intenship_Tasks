@@ -215,7 +215,7 @@
   left: 60px;
 }
 
-/* Responsive adjustments */
+/* Responsive*/
 @media (max-width: 768px) {
   .sideBar_container {
     width: 280px;
@@ -224,4 +224,43 @@
   .sideBar_container.collapsed {
     width: var(--sidebar-collapsed-width);
   }
+}
+
+/* Transitions for smooth animation */
+.sideBar_container {
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sideBar_container .logo {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sideBar_container .logo img {
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.sideBar_container .sidebar_list {
+  transition: left 0.3s ease;
+}
+
+.sideBar_container .button i {
+  transition: transform 0.3s ease;
+}
+
+
+.sideBar_container .link_container {
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease,
+  transform 0.3s ease;
+}
+
+
+.sideBar_container .link-text {
+  display: inline-block;
+  transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+.sideBar_container.collapsed .link-text {
+  display: none;
 }

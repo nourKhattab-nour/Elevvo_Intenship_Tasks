@@ -1,0 +1,284 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--primary-color), #35909b);
+  height: 93vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+.Form_Container {
+  width: 34%;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 65px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: white;
+}
+
+
+.header h1 {
+  position: absolute;
+  top: 81px;
+  margin: auto;
+  left: 224px;
+}
+
+.header p {
+  position: absolute;
+  top: 111px;
+  left: 205px;
+}
+
+.Form_Container .Names_input {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  gap: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 200px;
+  left: 79px;
+}
+
+.Form_Container .Names_input input {
+  width: 215px;
+  height: 37px;
+  outline: none;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 3px solid gray;
+}
+
+.Form_Container .Names_input input:focus {
+  border-color: #4a90e2;
+}
+
+.Form_Container .Email_Subject_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 257px;
+  left: 77px;
+}
+
+.Form_Container .Email_Subject_input input {
+  width: 458px;
+  height: 37px;
+  outline: none;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 3px solid gray;
+}
+
+.Form_Container .Email_Subject_input input:focus {
+  border-color: #4a90e2;
+}
+
+.Form_Container .Text_input {
+  width: 455px;
+  height: 116px;
+  position: absolute;
+  top: 393px;
+  left: 98px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Form_Container .Text_input textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  border: 3px solid gray;
+}
+
+.Form_Container .Text_input textarea:focus {
+  border-color: #4a90e2;
+}
+
+.Form_Container .btn {
+  position: absolute;
+  top: 600px;
+  left: 200px;
+  width: 40%;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Form_Container .btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 3px solid gray;
+}
+
+/* responsive */
+
+/* responsive.css
+   Load this AFTER your Style.css so it can override specific rules.
+*/
+
+/* make box-sizing predictable */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ----- Large tablets / small desktops ----- */
+@media (max-width: 1200px) {
+  .Form_Container {
+    width: 66% !important;
+    height: auto !important;
+    padding: 36px 32px !important;
+    margin-top: 40px !important;
+    left: auto !important;
+  }
+
+  /* restore header into document flow and center it */
+  .header h1,
+  .header p {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 0 6px 0 !important;
+    text-align: center !important;
+  }
+
+  /* Make inputs flow in normal layout instead of absolute positioned blocks */
+  .Form_Container .Names_input,
+  .Form_Container .Email_Subject_input,
+  .Form_Container .Text_input {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    padding: 0 !important;
+    gap: 18px !important;
+    width: 100% !important;
+  }
+
+  /* Email inputs were set to 209% — force them to normal width */
+  .Form_Container .Email_Subject_input input,
+  .Form_Container .Names_input input,
+  .Form_Container .Text_input textarea {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .Form_Container .Names_input {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Form_Container .Email_Subject_input {
+    flex-direction: column;
+  }
+
+  .Form_Container .btn {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 60% !important;
+    margin: 18px auto 0 auto !important;
+    display: block;
+  }
+}
+
+/* ----- Tablets and large phones ----- */
+@media (max-width: 768px) {
+  body {
+    min-height: 100vh; /* allow page to grow and scroll */
+  }
+
+  .Form_Container {
+    width: 92% !important;
+    height: auto !important;
+    margin-top: 24px !important;
+    padding: 20px !important;
+    border-radius: 14px !important;
+  }
+
+  /* stack name inputs vertically on narrow screens */
+  .Form_Container .Names_input {
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 0 !important;
+  }
+
+  .Form_Container .Email_Subject_input {
+    padding: 0 !important;
+    gap: 12px !important;
+  }
+
+  .Form_Container .Text_input {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* make inputs larger and easier to tap */
+  .Form_Container input,
+  .Form_Container textarea {
+    font-size: 15px !important;
+    padding: 10px !important;
+  }
+
+  .Form_Container .btn {
+    width: 100% !important;
+    padding: 12px 0 !important;
+  }
+}
+
+/* ----- Small phones ----- */
+@media (max-width: 480px) {
+  .Form_Container {
+    width: 96% !important;
+    padding: 14px !important;
+    margin-top: 16px !important;
+  }
+
+  .header h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .header p {
+    font-size: 0.95rem !important;
+  }
+
+  .Form_Container .Text_input textarea {
+    height: 120px !important;
+  }
+
+  /* ensure no horizontal overflow from long inputs */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}

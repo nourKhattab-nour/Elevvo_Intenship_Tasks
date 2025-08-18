@@ -1,0 +1,575 @@
+:root {
+  --whiteColor: #f8fafd;
+  --primaryColor: #7f22fe;
+  --grayColor: #c6cbd3;
+  --lightPurple: #eceff1;
+  --footerColor: #1d293d;
+  --darkGrayColor: #9a9b9c;
+}
+/* Start Resposive */
+
+/* End Resposive */
+
+/* Start Home Section */
+/* Start top Section  */
+.Home_section {
+  background-color: var(--lightPurple);
+  width: 100%;
+  height: 589px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Home_section .top_section img {
+  margin-left: 121px;
+  margin-right: 1375px;
+  width: 10%;
+  animation: fadeInLeft 1s ease-out forwards;
+  opacity: 0;
+}
+
+.Home_section .top_section .login {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: var(--darkGrayColor);
+  animation: fadeInUp 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+.Home_section .top_section .login:hover {
+  color: var(--primaryColor);
+}
+.Home_section .top_section .started {
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  font-weight: bold;
+  box-shadow: 0, 2px, 3px var(--grayColor);
+  margin-right: 10px;
+  animation: fadeInUp 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+.Home_section .top_section .started:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--whiteColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+  box-shadow: 0, 2px, 3px var(--grayColor);
+}
+/* End top Section  */
+/* start down Section  */
+.Home_section .down_section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.Home_section .down_section .title {
+  font-size: 80px;
+  font-weight: bold;
+  margin-left: 457px;
+  animation: fadeInUp 1s ease-out 0.2s forwards;
+  opacity: 0;
+  color: black;
+}
+.Home_section .down_section span {
+  background: linear-gradient(90deg, #8a2be2, #00c6ff, #00ff94);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.Home_section .down_section .Description {
+  font-size: 20px;
+  color: var(--darkGrayColor);
+  margin-left: 519px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-top: -69px;
+  animation: fadeInUp 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+.Home_section .down_section button {
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  box-shadow: 0, 2px, 3px var(--grayColor);
+  margin-left: 442px;
+  margin-top: 21px;
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+.Home_section .down_section button:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--whiteColor);
+  color: var(--primaryColor);
+  box-shadow: 0, 2px, 3px var(--grayColor);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(127, 34, 254, 0.3);
+}
+/* End down Section  */
+/* End Home Section  */
+
+/* Start Feature Section */
+/* Start top Section  */
+.feature_section {
+  width: 100%;
+  height: 700px;
+  background-color: var(--whiteColor);
+}
+
+.feature_section .top_section {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.feature_section .top_section .title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 119px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+  color: black;
+}
+
+.feature_section .top_section .Description {
+  font-size: 20px;
+  color: var(--darkGrayColor);
+  margin-left: 50px;
+  line-height: 20px;
+  margin-top: -34px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+/* End top Section  */
+/* Start down Section  */
+.feature_section .down_section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature_section .down_section .card {
+  width: 25%;
+  height: 100%;
+  background-color: var(--lightPurple);
+  text-align: center;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+}
+.feature_section .down_section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(127, 34, 254, 0.2);
+}
+.feature_section .down_section .card .card_content {
+  margin-top: 50px;
+}
+
+.feature_section .down_section .card .card_content p {
+  color: var(--darkGrayColor);
+}
+.feature_section .down_section .card:nth-child(1) {
+  animation: fadeInLeft 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.feature_section .down_section .card:nth-child(2) {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+.feature_section .down_section .card:nth-child(3) {
+  animation: fadeInRight 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+/* End down Section  */
+/* End Feature Section  */
+
+/* Start Feedback Section */
+.Feedback_section {
+  background-color: var(--lightPurple);
+  width: 100%;
+  height: 700px;
+}
+/* Start top Section  */
+.Feedback_section .top_section {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Feedback_section .top_section .title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 119px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+  color: black;
+}
+
+.Feedback_section .top_section .Description {
+  font-size: 20px;
+  color: var(--darkGrayColor);
+  margin-left: 50px;
+  line-height: 20px;
+  margin-top: -34px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+/* End top Section  */
+/* Start down Section  */
+.Feedback_section .down_section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Feedback_section .down_section .card {
+  width: 22%;
+  height: 80%;
+  background-color: var(--whiteColor);
+  text-align: left;
+  border-radius: 20px;
+  border: 2px solid var(--darkGrayColor);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Feedback_section .down_section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.Feedback_section .down_section .card .card_content {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.Feedback_section .down_section .card .card_content p {
+  color: var(--darkGrayColor);
+}
+.Feedback_section .down_section .card:nth-child(1) {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.Feedback_section .down_section .card:nth-child(2) {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+.Feedback_section .down_section .card:nth-child(3) {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+/* End down Section  */
+/* End Feedback Section  */
+
+/* Start pricing Section  */
+.pricing_section {
+  background-color: var(--whiteColor);
+  width: 100%;
+  height: 1000px;
+}
+/* Start top Section  */
+.pricing_section .top_section {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.pricing_section .top_section .title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 119px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+  color: black;
+}
+
+.pricing_section .top_section .Description {
+  font-size: 20px;
+  color: var(--darkGrayColor);
+  margin-left: 50px;
+  line-height: 20px;
+  margin-top: -34px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+/* End top Section  */
+/* Start down Section  */
+.pricing_section .down_section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -69px;
+}
+
+.pricing_section .down_section .card {
+  width: 24%;
+  height: 107%;
+  background-color: var(--whiteColor);
+  text-align: left;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid var(--darkGrayColor);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pricing_section .down_section .card:hover {
+  border: 3px solid var(--primaryColor);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(127, 34, 254, 0.15);
+}
+.pricing_section .down_section .card .card_content {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.pricing_section .down_section .card .card_content p {
+  color: var(--darkGrayColor);
+}
+.pricing_section .down_section .card .card_content h4 {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+.pricing_section .down_section .card .card_content h1 {
+  font-weight: bold;
+  font-size: 25px;
+  font-size: 2.2em;
+  /* line-height: 1.1; */
+  color: black;
+  position: absolute;
+  top: 148px;
+}
+
+.pricing_section .down_section .card .card_content span {
+  color: var(--darkGrayColor);
+  position: absolute;
+  top: 193px;
+  left: 135px;
+  font-size: 20px;
+}
+.pricing_section .down_section .card .card_content ul {
+  position: absolute;
+  top: 220px;
+  list-style: none; /* Removes bullet points */
+  padding-left: 0; /* Removes default padding */
+  margin-left: 0; /* Ensures no extra margin */
+  line-height: 50px;
+  color: black;
+}
+.pricing_section .down_section .card .card_content ul li i {
+  margin-right: 10px; /* Space between icon and text */
+  color: var(--primaryColor);
+}
+.pricing_section .down_section .card .card_content button {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+  width: 80%;
+  color: var(--primaryColor);
+  font-weight: bold;
+  background: var(--whiteColor);
+  border: 1px solid var(--primaryColor);
+}
+.pricing_section .down_section .card .card_content button:hover {
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.pricing_section .down_section .card .popular {
+  border-radius: 20px;
+  width: 16%;
+  height: 10%;
+  position: absolute;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  left: 45px;
+  top: -14px;
+}
+.pricing_section .down_section .card:nth-child(1) {
+  animation: fadeInLeft 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.pricing_section .down_section .card:nth-child(2) {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+  transform: translateY(-20px);
+}
+.pricing_section .down_section .card:nth-child(3) {
+  animation: fadeInRight 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+/* End down Section  */
+/* End pricing Section  */
+
+/* Start footer Section  */
+.footer_section {
+  width: 100%;
+  height: 450px;
+  background-color: var(--footerColor);
+}
+.footer_section .border {
+  width: 90%;
+  height: 0.03%;
+  background-color: var(--whiteColor);
+  margin-left: 100px;
+}
+.footer_section .top_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    minmax(150px, 1fr)
+  ); /* 5 equal columns with minimum width */
+  grid-auto-rows: minmax(60px, auto);
+  gap: 1px;
+  color: white;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.footer_section .top_section .Col {
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 20px;
+}
+.footer_section .top_section .Col li {
+  list-style-type: none;
+  list-style-type: none;
+  padding: 12px 0;
+  line-height: 1.5;
+}
+.footer_section .top_section img {
+  width: 55%;
+  height: 22%;
+  margin-top: 63px;
+  margin-left: 20px;
+}
+.footer_section .top_section p {
+  margin-left: 80px;
+  color: var(--darkGrayColor);
+}
+.footer_section .down_section {
+  width: 90%;
+  height: 50px;
+  color: white;
+  position: relative;
+  padding: 10px 5%;
+}
+.footer_section .down_section .left_section img {
+  position: absolute;
+  top: 18px;
+  right: 49px;
+}
+/* End footer Section  */
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Base animation class */
+.animate-on-scroll {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced button animations */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(127, 34, 254, 0.3);
+}

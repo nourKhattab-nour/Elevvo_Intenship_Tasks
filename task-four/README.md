@@ -1,12 +1,29 @@
-# React + Vite
+# Elevvo Internship Tasks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my solutions for the Elevvo Internship program.  
+Each task focuses on different aspects of **Frontend Development** using React, JavaScript, and CSS/Tailwind.
 
-Currently, two official plugins are available:
+---
+<img width="1901" height="868" alt="image" src="https://github.com/user-attachments/assets/c69fb8d9-77f8-46ef-8775-73d80b3f499d" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Task 4 – Personal Blog Homepage
 
-## Expanding the ESLint configuration
+### 📝 Description
+In this task, I built a **personal blog homepage** with features such as blog post listing, search, category filtering, and pagination.  
+The goal was to practice **React, Props & State, conditional rendering, and responsive layouts**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🚀 Features
+- 🔍 **Search filter**: Filter posts by title keyword.  
+- 📂 **Category filter**: Switch between post types (e.g., Tech, Travel, Food).  
+- 📰 **Blog card layout**: Each post shows title, image, short description, and date.  
+- ⏳ **Pagination**: Limit the number of posts per page.  
+- 📱 **Responsive design**: Works on desktop and mobile using **Tailwind CSS**.  
+
+### 🛠️ Tools & Libraries
+- React  
+- JavaScript  
+- Tailwind CSS  
+- Props & State  
+- Conditional Rendering  
+
+

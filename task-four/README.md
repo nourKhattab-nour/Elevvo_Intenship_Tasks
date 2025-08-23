@@ -1,7 +1,7 @@
 # Elevvo Internship Tasks
 
 This repository contains my solutions for the Elevvo Internship program.  
-Each task focuses on different aspects of **Frontend Development** using React, JavaScript, and CSS/Tailwind.
+Each task focuses on different aspects of **Frontend Development** using React, JavaScript, and CSS.
 
 ---
 <img width="1901" height="868" alt="image" src="https://github.com/user-attachments/assets/c69fb8d9-77f8-46ef-8775-73d80b3f499d" />

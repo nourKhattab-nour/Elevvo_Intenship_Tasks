@@ -1,0 +1,351 @@
+/* Start Menu */
+
+.menu {
+  width: 19%;
+  height: 1000px;
+  box-shadow: 5px 5px 15px gray;
+}
+
+.menu .title {
+  width: 100%;
+  height: 10%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.menu .title h1 {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul a {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+  line-height: 50px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.menu ul a:hover {
+ color: blue;
+}
+.top_menu {
+  width: 79%;
+  height: 14%;
+  box-shadow: 5px 5px 15px gray;
+  position: absolute;
+  top: 27px;
+  left: 469px;
+}
+.top_menu h1 {
+  padding-left: 30px;
+}
+
+.container .middle_section {
+  width: 79%;
+  height: 80%;
+  /* box-shadow: 5px 5px 15px gray; */
+  position: absolute;
+  top: 178px;
+  left: 472px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-settings-container{
+  width: 79%;
+  height: 80%;
+  /* box-shadow: 5px 5px 15px gray; */
+  position: absolute;
+  top: 178px;
+  left: 472px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  border-radius: 12px;
+  padding: 20px;
+  width: 42%;
+  height: 70%;
+box-shadow: 5px 5px 15px gray;
+}
+
+.profile-card-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile-info .form-group {
+  margin-bottom: 12px;
+}
+
+.profile-info label {
+  display: block;
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.ri-account-circle-2-line{
+  font-size: 100px;
+  color: black;
+  background-color: white;
+  box-shadow: 5px 5px 15px gray;
+  border-radius: 50%;
+  padding: 30px;
+}
+.profile-info input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 5px 5px 15px gray;
+}
+
+
+.container .middle_section .top {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .middle_section .top .card {
+  width: 25%;
+  height: 80%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container .middle_section .top .card .left {
+  width: 100%;
+  height: 70%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  padding-left: 20px;
+}
+.container .middle_section .top .card .left p {
+  color: gray;
+  font-weight: bold;
+  font-size: 25px;
+}
+.container .middle_section .top .card .left h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+.container .middle_section .top .card .right {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+.container .middle_section .top .card .right i {
+  font-size: 50px;
+  color: blue;
+  background-color: rgb(145, 174, 229);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .middle_section .top .card .right .ri-money-dollar-circle-fill {
+  font-size: 50px;
+  color: green;
+  background-color: rgb(152, 229, 145);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .middle_section .top .card .right .ri-timer-2-line {
+  font-size: 50px;
+  color: rgb(238, 102, 11);
+  background-color: rgb(241, 203, 177);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .middle_section .top .card .right .ri-team-fill {
+  font-size: 50px;
+  color: rgb(182, 25, 221);
+  background-color: rgb(223, 177, 241);
+  border-radius: 20px;
+  padding: 20px;
+}
+.container .middle_section .down {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.container .middle_section .down .left {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .middle_section .down .right p{
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.container .middle_section .down .right ul{
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  
+  margin-top: 30px;
+}
+
+.container .middle_section .down .right ul li{
+  margin-left: 40px;
+}
+ul li::marker {
+  font-size: 20px; 
+}
+
+.container .middle_section .down .right {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px gray;
+  
+}
+
+/* End Menu */
+
+/* Start project Page */
+.container .Table_middle_section {
+  width: 79%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  position: absolute;
+  top: 178px;
+  left: 477px;
+  box-shadow: 5px 5px 15px gray;
+}
+.table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px gray;
+}
+
+.table th,
+.table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.project-name {
+  font-weight: bold;
+}
+
+.project-subtitle {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.status-completed {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.status-progress {
+  color: #facc15;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 5px;
+  background-color: #334155;
+  overflow: hidden;
+  width: 100px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.progress-100 {
+  width: 100%;
+  background-color: #22c55e;
+}
+
+.progress-75 {
+  width: 75%;
+  background-color: #facc15;
+}
+
+.actions i {
+  margin: 0 8px;
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+.actions i:hover {
+  color: #38bdf8;
+}
+/* End project Page */

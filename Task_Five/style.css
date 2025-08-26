@@ -1,0 +1,769 @@
+:root {
+  --whiteColor: #f8fafd;
+  --primaryColor: #7f22fe;
+  --grayColor: #c6cbd3;
+  --lightPurple: #eceff1;
+  --footerColor: #1d293d;
+  --darkGrayColor: #9a9b9c;
+
+  --backgroundColor: #0b0f17;
+  --sectionBackground: #1f2937;
+  --cardBackground: #1d2631;
+  --textColor: white;
+  --borderColor: #9a9b9c;
+}
+
+/* Added light theme variables */
+:root.light-theme {
+  --backgroundColor: #ffffff;
+  --sectionBackground: #f8fafd;
+  --cardBackground: #ffffff;
+  --textColor: #1d293d;
+  --borderColor: #c6cbd3;
+}
+
+/* Start Resposive */
+
+/* End Resposive */
+
+/* Start Home Section */
+/* Start top Section  */
+body {
+  background-color: var(--backgroundColor); /* Using CSS variable instead of hardcoded color */
+}
+
+.Home_section {
+  background-color: var(--lightPurple);
+  width: 100%;
+  height: 738px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(to bottom, var(--backgroundColor), #1e1f3f); /* Using variable for gradient */
+}
+
+.Home_section .top_section {
+  background-color: var(--backgroundColor); /* Using CSS variable */
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.Home_section .top_section .ri-contrast-2-line {
+  width: 3%;
+  animation: fadeInLeft 1s ease-out forwards;
+  opacity: 0;
+  font-size: 30px;
+  color: var(--textColor); /* Using CSS variable */
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 20px;
+  cursor: pointer; /* Added cursor pointer for theme toggle */
+  transition: all 0.3s ease; /* Added smooth transition */
+}
+
+.Home_section .top_section .ri-contrast-2-line:hover {
+  background-color: var(--primaryColor); /* Added hover effect */
+  transform: scale(1.1);
+}
+
+.Home_section .top_section i {
+  width: 2%;
+  animation: fadeInLeft 1s ease-out forwards;
+  opacity: 0;
+  font-size: 30px;
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.Home_section .top_section p {
+  color: var(--textColor); /* Using CSS variable */
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 1000px;
+}
+
+.Home_section .top_section .login {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: var(--darkGrayColor);
+  animation: fadeInUp 1s ease-out 0.2s forwards;
+  opacity: 0;
+  text-decoration: none;
+}
+.Home_section .top_section .login:hover {
+  color: var(--primaryColor);
+}
+.Home_section .top_section .started {
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  font-weight: bold;
+  box-shadow: 0, 2px, 3px var(--grayColor);
+  margin-right: 10px;
+  animation: fadeInUp 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+.Home_section .top_section .started:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--whiteColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+  box-shadow: 0, 2px, 3px var(--grayColor);
+}
+/* End top Section  */
+/* start down Section  */
+.Home_section .down_section {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.Home_section .down_section .left {
+  width: 50%;
+  height: 600px;
+  text-align: left;
+}
+.Home_section .down_section .left h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-left: 340px;
+  color: var(--textColor); /* Using CSS variable */
+}
+.Home_section .down_section .left p {
+  font-size: 25px;
+  margin-left: 340px;
+  color: var(--textColor); /* Using CSS variable */
+}
+.Home_section .down_section .left span {
+  color: var(--primaryColor);
+}
+.Home_section .down_section .left .buttons {
+  margin-left: 340px;
+}
+.Home_section .down_section .left button {
+  height: 54px;
+  width: 40%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #1e1f3f;
+  border: 1px solid var(--primaryColor);
+}
+.Home_section .down_section .left button:hover {
+  height: 54px;
+  width: 40%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+.Home_section .down_section .right {
+  width: 70%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.Home_section .down_section .right img {
+  width: 62%;
+  height: 87%;
+}
+
+/* End down Section  */
+/* End Home Section  */
+
+/* Start Feature Section */
+/* Start top Section  */
+.feature_section {
+  width: 100%;
+  height: 700px;
+  background-color: var(--backgroundColor); /* Using CSS variable */
+  color: var(--textColor); /* Using CSS variable */
+}
+
+.feature_section .top_section {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.feature_section .top_section .title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 119px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+  color: var(--textColor); /* Using CSS variable */
+}
+
+.feature_section .top_section .Description {
+  font-size: 30px;
+  color: var(--textColor); /* Using CSS variable */
+  margin-left: 50px;
+  line-height: 20px;
+  margin-top: -23px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+/* End top Section  */
+/* Start down Section  */
+.feature_section .down_section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.feature_section .down_section i {
+  color: white;
+  font-size: 30px;
+  background-color: #7f22fe;
+  padding: 10px;
+  border-radius: 10px;
+}
+.feature_section .down_section .card {
+  width: 21%;
+  height: 94%;
+  background-color: var(--cardBackground); /* Using CSS variable */
+  text-align: left;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--textColor); /* Using CSS variable */
+  border: 1px solid var(--borderColor); /* Added border for light theme visibility */
+}
+.feature_section .down_section .card .ri-team-fill {
+  color: white;
+  font-size: 30px;
+  background-color: #f59e0b;
+  padding: 10px;
+  border-radius: 10px;
+}
+.feature_section .down_section .card .ri-robot-2-fill {
+  color: white;
+  font-size: 30px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+}
+.feature_section .down_section .card h3 {
+  color: var(--textColor); /* Using CSS variable */
+}
+.feature_section .down_section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(127, 34, 254, 0.2);
+}
+.feature_section .down_section .card .card_content {
+  margin: 50px;
+}
+
+.feature_section .down_section .card .card_content p {
+  color: var(--darkGrayColor);
+}
+.feature_section .down_section .card:nth-child(1) {
+  animation: fadeInLeft 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.feature_section .down_section .card:nth-child(2) {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+.feature_section .down_section .card:nth-child(3) {
+  animation: fadeInRight 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+/* End down Section  */
+/* End Feature Section  */
+
+/* Start Feedback Section */
+.Feedback_section {
+  background-color: var(--sectionBackground); /* Using CSS variable */
+  width: 100%;
+  height: 700px;
+}
+/* Start top Section  */
+.Feedback_section .top_section {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Feedback_section .top_section .title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 119px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+  color: var(--textColor); /* Using CSS variable */
+}
+
+.Feedback_section .top_section .Description {
+  font-size: 30px;
+  color: var(--textColor); /* Using CSS variable */
+  margin-left: 50px;
+  line-height: 20px;
+  margin-top: -25px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+/* End top Section  */
+/* Start down Section  */
+.Feedback_section .down_section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Feedback_section .down_section .card {
+  width: 21%;
+  height: 94%;
+  background-color: var(--cardBackground); /* Using CSS variable */
+  text-align: left;
+  border-radius: 20px;
+  border: 2px solid var(--borderColor); /* Using CSS variable */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Feedback_section .down_section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.Feedback_section .down_section .card .card_content {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.Feedback_section .down_section .card .card_content p {
+  color: var(--darkGrayColor);
+}
+.Feedback_section .down_section .card .card_content i {
+  color: #f59e0b;
+}
+.Feedback_section .down_section .card:nth-child(1) {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.Feedback_section .down_section .card:nth-child(2) {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+.Feedback_section .down_section .card:nth-child(3) {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+/* End down Section  */
+/* End Feedback Section  */
+
+/* Start pricing Section  */
+.pricing_section {
+  background-color: var(--backgroundColor); /* Using CSS variable */
+  width: 100%;
+  height: 1000px;
+}
+/* Start top Section  */
+.pricing_section .top_section {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.pricing_section .top_section .title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 119px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+  color: var(--textColor); /* Using CSS variable */
+}
+
+.pricing_section .top_section .Description {
+  font-size: 30px;
+  color: var(--textColor); /* Using CSS variable */
+  margin-left: 50px;
+  line-height: 20px;
+  margin-top: -19px;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+/* End top Section  */
+/* Start down Section  */
+.pricing_section .down_section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -69px;
+}
+
+.pricing_section .down_section .card {
+  width: 24%;
+  height: 107%;
+  background-color: var(--cardBackground); /* Using CSS variable */
+  text-align: left;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid var(--borderColor); /* Using CSS variable */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pricing_section .down_section .card:hover {
+  border: 3px solid #f59e0b;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(127, 34, 254, 0.15);
+  background-color: var(--primaryColor);
+}
+.pricing_section .down_section .card .card_content {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.pricing_section .down_section .card .card_content p {
+  color: var(--darkGrayColor);
+  position: absolute;
+  top: 90px;
+  color: var(--textColor); /* Using CSS variable */
+}
+.pricing_section .down_section .card .card_content h4 {
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--textColor); /* Using CSS variable */
+}
+.pricing_section .down_section .card .card_content h1 {
+  font-weight: bold;
+  font-size: 25px;
+  font-size: 2.2em;
+  color: var(--textColor); /* Using CSS variable */
+  position: absolute;
+  top: 148px;
+}
+
+.pricing_section .down_section .card .card_content span {
+  color: var(--darkGrayColor);
+  position: absolute;
+  top: 193px;
+  left: 135px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pricing_section .down_section .card .card_content ul {
+  position: absolute;
+  top: 220px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  line-height: 50px;
+  color: var(--textColor); /* Using CSS variable */
+}
+.pricing_section .down_section .card .card_content button {
+  position: absolute;
+  bottom: 62px;
+  padding: 10px;
+  width: 80%;
+  color: var(--primaryColor);
+  font-weight: bold;
+  background: var(--cardBackground); /* Using CSS variable */
+  border: 1px solid var(--primaryColor);
+  border-radius: 10px;
+}
+.pricing_section .down_section .card .card_content button:hover {
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.pricing_section .down_section .card .popular {
+  border-radius: 33px;
+  width: 43%;
+  height: 10%;
+  position: absolute;
+  background-color: #f59e0b;
+  color: var(--whiteColor);
+  left: 132px;
+  top: -14px;
+  font-weight: bold;
+}
+.pricing_section .down_section .card:nth-child(1) {
+  animation: fadeInLeft 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.pricing_section .down_section .card:nth-child(2) {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+  transform: translateY(-20px);
+}
+.pricing_section .down_section .card:nth-child(3) {
+  animation: fadeInRight 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+/* End down Section  */
+/* End pricing Section  */
+
+.call_to_action {
+  background-color: var(--sectionBackground); 
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.call_to_action .top {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.call_to_action .top h1 {
+  font-size: 60px;
+  color: var(--textColor);
+  font-weight: bold;
+}
+.call_to_action .top p {
+  font-size: 20px;
+  color: var(--textColor); 
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+}
+.call_to_action .down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+}
+
+.call_to_action .down .email_input {
+  width: 40%;
+  height: 70px;
+  border-radius: 10px;
+}
+.call_to_action .down .text_input {
+  width: 40%;
+  height: 200px;
+  border-radius: 10px;
+}
+.call_to_action .down button {
+  height: 54px;
+  width: 20%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #1e1f3f;
+  border: 1px solid var(--primaryColor);
+}
+/* Start footer Section  */
+.footer_section {
+  width: 100%;
+  height: 450px;
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--primaryColor);
+}
+.footer_section .border {
+  width: 90%;
+  height: 0.03%;
+  background-color: var(--whiteColor);
+  margin-left: 100px;
+}
+.footer_section .top_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-auto-rows: minmax(60px, auto);
+  gap: 1px;
+  color: var(--textColor); 
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+.footer_section .top_section .Col {
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 20px;
+}
+.footer_section .top_section .Col li {
+  list-style-type: none;
+  list-style-type: none;
+  padding: 12px 0;
+  line-height: 1.5;
+}
+.footer_section .top_section img {
+  width: 55%;
+  height: 22%;
+  margin-top: 63px;
+  margin-left: 20px;
+}
+.footer_section .top_section p {
+  margin-left: 80px;
+  color: var(--darkGrayColor);
+}
+.footer_section .down_section {
+  width: 90%;
+  height: 50px;
+  color: var(--textColor); /* Using CSS variable */
+  position: relative;
+  padding: 10px 5%;
+}
+
+.footer_section .top_section .logo .ri-rocket-fill {
+  position: absolute;
+  left: 92px;
+  top: 47px;
+  font-size: 30px;
+  background-color: var(--primaryColor);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer_section .top_section .logo .title {
+  position: absolute;
+  left: 72px;
+  top: 31px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--textColor); /* Using CSS variable */
+}
+
+.footer_section .top_section .logo .des {
+  position: absolute;
+  left: 72px;
+  top: 77px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--textColor); /* Using CSS variable */
+}
+.footer_section .left_section {
+  display: flex;
+  flex-direction: row;
+  gap: 1247px;
+}
+.footer_section .left_section .right_section p {
+  margin-left: 90px;
+  margin-top: 20px;
+  color: var(--textColor); /* Using CSS variable */
+}
+.footer_section .left_section .left_section img {
+  height: 43%;
+  margin-top: 20px;
+}
+/* End footer Section  */
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Base animation class */
+.animate-on-scroll {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced button animations */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(127, 34, 254, 0.3);
+}

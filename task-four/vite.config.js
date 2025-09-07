@@ -2,6 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/Elevvo_Intenship_Tasks/task-four/", // 👈 VERY important
+  base: "/Elevvo_Intenship_Tasks/", 
   plugins: [react()],
 });

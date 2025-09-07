@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-// ✅ Import images
 import techBlog from "./assets/techBlog.jpg";
 import techBlogTwo from "./assets/techBlogTwo.jpg";
 import travelBlogOne from "./assets/Travel-Blogger.webp";
@@ -19,7 +18,7 @@ const blogPosts = [
       "Exploring how generative AI is transforming creative industries, from art to code generation.",
     category: "tech",
     date: "October 28, 2023",
-    image: techBlog, // ✅ use imported image
+    image: techBlog, 
   },
   {
     id: 2,
@@ -85,3 +84,74 @@ const blogPosts = [
     image: foodBlogPinch,
   },
 ];
+
+const blog = () => {
+  const [activeFilter, setActiveFilter] = useState("all");
+  let posToshow = [];
+  if (activeFilter === "all") {
+    posToshow = blogPosts;
+  } else {
+    posToshow = blogPosts.filter((post) => post.category === activeFilter);
+  }
+  function changeFilter(newFilter) {
+    setActiveFilter(newFilter);
+  }
+
+  return (
+    <div>
+      {/* <!-- Start Blog section --> */}
+      <div className="blog">
+        <div className="top_section">
+          <button
+            className={`Btn ${activeFilter === "all" ? "active" : ""}`}
+            onClick={() => changeFilter("all")}
+          >
+            All Posts
+          </button>
+          <button
+            className={`Btn ${activeFilter === "tech" ? "active" : ""}`}
+            onClick={() => changeFilter("tech")}
+          >
+            Tech
+          </button>
+          <button
+            className={`Btn ${activeFilter === "travel" ? "active" : ""}`}
+            onClick={() => changeFilter("travel")}
+          >
+            Travel
+          </button>
+          <button
+            className={`Btn ${activeFilter === "food" ? "active" : ""}`}
+            onClick={() => changeFilter("food")}
+          >
+            Food
+          </button>
+        </div>
+
+        <div className="down_section">
+          {posToshow.map((post) => (
+            <div key={post.id} className="card">
+              <img src={post.image} className="card-img-top" alt={post.title} />
+              <div className="card-body">
+                <h5 className="card-title">{post.title}</h5>
+                <p className="card-text">{post.description}</p>
+                <small>{post.date}</small>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="Buttons">
+          <ArrowLeft className="ArrowLeft" />
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <ArrowRight className="ArrowRight" />
+        </div>
+      </div>
+      {/* <!-- End Blog section --> */}
+    </div>
+  );
+};
+
+export default blog;

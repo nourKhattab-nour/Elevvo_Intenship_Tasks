@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-import techBlog from "./assets/techBlog.jpg";
-import techBlogTwo from "./assets/techBlogTwo.jpg";
-import travelBlogOne from "./assets/Travel-Blogger.webp";
-import travelBlogTwo from "./assets/travelBlog.jpg";
-import foodBlogThree from "./assets/foodBlogThree.jpg";
-import foodBlogTwo from "./assets/foodBlogTwo.webp";
-import foodBlogPhotography from "./assets/Food-blog-photography.jpeg";
-import foodBlogPinch from "./assets/Pinch-of-Yum-Blog.png";
+
+import techBlog from "../assets/techBlog.jpg";
+import techBlogTwo from "../assets/techBlogTwo.jpg";
+import travelBlogOne from "../assets/Travel-Blogger.webp";
+import travelBlogTwo from "../assets/travelBlog.jpg";
+import foodBlogThree from "../assets/foodBlogThree.jpg";
+import foodBlogTwo from "../assets/foodBlogTwo.webp";
+import foodBlogPhotography from "../assets/Food-blog-photography.jpeg";
+import foodBlogPinch from "../assets/Pinch-of-Yum-Blog.png";
 
 const blogPosts = [
   {
@@ -18,7 +19,7 @@ const blogPosts = [
       "Exploring how generative AI is transforming creative industries, from art to code generation.",
     category: "tech",
     date: "October 28, 2023",
-    image: techBlog, 
+    image: techBlog,
   },
   {
     id: 2,
@@ -85,51 +86,49 @@ const blogPosts = [
   },
 ];
 
-const blog = () => {
+const Blog = () => {
   const [activeFilter, setActiveFilter] = useState("all");
-  let posToshow = [];
-  if (activeFilter === "all") {
-    posToshow = blogPosts;
-  } else {
-    posToshow = blogPosts.filter((post) => post.category === activeFilter);
-  }
-  function changeFilter(newFilter) {
-    setActiveFilter(newFilter);
-  }
+
+  const filteredPosts =
+    activeFilter === "all"
+      ? blogPosts
+      : blogPosts.filter((post) => post.category === activeFilter);
 
   return (
     <div>
       {/* <!-- Start Blog section --> */}
       <div className="blog">
+        {/* Filter Buttons */}
         <div className="top_section">
           <button
             className={`Btn ${activeFilter === "all" ? "active" : ""}`}
-            onClick={() => changeFilter("all")}
+            onClick={() => setActiveFilter("all")}
           >
             All Posts
           </button>
           <button
             className={`Btn ${activeFilter === "tech" ? "active" : ""}`}
-            onClick={() => changeFilter("tech")}
+            onClick={() => setActiveFilter("tech")}
           >
             Tech
           </button>
           <button
             className={`Btn ${activeFilter === "travel" ? "active" : ""}`}
-            onClick={() => changeFilter("travel")}
+            onClick={() => setActiveFilter("travel")}
           >
             Travel
           </button>
           <button
             className={`Btn ${activeFilter === "food" ? "active" : ""}`}
-            onClick={() => changeFilter("food")}
+            onClick={() => setActiveFilter("food")}
           >
             Food
           </button>
         </div>
 
+        {/* Blog Cards */}
         <div className="down_section">
-          {posToshow.map((post) => (
+          {filteredPosts.map((post) => (
             <div key={post.id} className="card">
               <img src={post.image} className="card-img-top" alt={post.title} />
               <div className="card-body">
@@ -141,6 +140,7 @@ const blog = () => {
           ))}
         </div>
 
+        {/* Pagination (placeholder) */}
         <div className="Buttons">
           <ArrowLeft className="ArrowLeft" />
           <button>1</button>
@@ -154,4 +154,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Blog;

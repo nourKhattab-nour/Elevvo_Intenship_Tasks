@@ -573,3 +573,310 @@ button:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(127, 34, 254, 0.3);
 }
+/* Responsive CSS Additions */
+@media (max-width: 1600px) {
+  .Home_section .top_section img {
+    margin-left: 80px;
+    margin-right: auto;
+  }
+  
+  .Home_section .down_section .title {
+    margin-left: 380px;
+    font-size: 70px;
+  }
+  
+  .Home_section .down_section .Description {
+    margin-left: 440px;
+  }
+  
+  .Home_section .down_section button {
+    margin-left: 380px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Home_section .down_section .title {
+    margin-left: 300px;
+    font-size: 65px;
+  }
+  
+  .Home_section .down_section .Description {
+    margin-left: 360px;
+  }
+  
+  .Home_section .down_section button {
+    margin-left: 300px;
+  }
+  
+  .feature_section .down_section,
+  .Feedback_section .down_section,
+  .pricing_section .down_section {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Home_section .top_section img {
+    margin-left: 50px;
+    width: 12%;
+  }
+  
+  .Home_section .down_section {
+    width: 85%;
+    margin-left: 20px;
+  }
+  
+  .Home_section .down_section .title {
+    margin-left: 220px;
+    font-size: 60px;
+  }
+  
+  .Home_section .down_section .Description {
+    margin-left: 280px;
+  }
+  
+  .Home_section .down_section button {
+    margin-left: 220px;
+  }
+  
+  .feature_section .down_section,
+  .Feedback_section .down_section,
+  .pricing_section .down_section {
+    gap: 50px;
+  }
+  
+  .feature_section .down_section .card,
+  .Feedback_section .down_section .card,
+  .pricing_section .down_section .card {
+    width: 28%;
+  }
+  
+  .footer_section .top_section {
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+  }
+  
+  .footer_section .top_section img {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .Home_section {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  
+  .Home_section .top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .Home_section .top_section img {
+    margin: 0;
+    width: 100px;
+  }
+  
+  .Home_section .down_section {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .Home_section .down_section .title {
+    margin: 0 auto;
+    font-size: 50px;
+    width: 100%;
+  }
+  
+  .Home_section .down_section .Description {
+    margin: 20px auto;
+    width: 100%;
+  }
+  
+  .Home_section .down_section button {
+    margin: 20px auto;
+  }
+  
+  .feature_section,
+  .Feedback_section,
+  .pricing_section {
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .feature_section .top_section .title,
+  .Feedback_section .top_section .title,
+  .pricing_section .top_section .title {
+    margin-top: 40px;
+    font-size: 45px;
+  }
+  
+  .feature_section .down_section,
+  .Feedback_section .down_section,
+  .pricing_section .down_section {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .feature_section .down_section .card,
+  .Feedback_section .down_section .card,
+  .pricing_section .down_section .card {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  
+  .pricing_section .down_section .card {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  
+  .footer_section {
+    height: auto;
+    padding: 30px 0;
+  }
+  
+  .footer_section .top_section {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .footer_section .border {
+    margin: 20px auto;
+    width: 85%;
+  }
+  
+  .footer_section .down_section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer_section .down_section .left_section img {
+    position: static;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home_section .down_section .title {
+    font-size: 40px;
+  }
+  
+  .Home_section .down_section .Description {
+    font-size: 18px;
+  }
+  
+  .feature_section .top_section .title,
+  .Feedback_section .top_section .title,
+  .pricing_section .top_section .title {
+    font-size: 35px;
+  }
+  
+  .feature_section .top_section .Description,
+  .Feedback_section .top_section .Description,
+  .pricing_section .top_section .Description {
+    font-size: 18px;
+    margin-left: 0;
+  }
+  
+  .feature_section .down_section .card,
+  .Feedback_section .down_section .card,
+  .pricing_section .down_section .card {
+    width: 85%;
+  }
+  
+  .pricing_section .down_section .card .popular {
+    width: 25%;
+    left: 30px;
+  }
+  
+  .footer_section .top_section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer_section .top_section img {
+    margin: 0 auto;
+    width: 200px;
+  }
+  
+  .footer_section .top_section p {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .Home_section .top_section {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .Home_section .down_section .title {
+    font-size: 32px;
+  }
+  
+  .Home_section .down_section .Description {
+    font-size: 16px;
+  }
+  
+  .feature_section .top_section .title,
+  .Feedback_section .top_section .title,
+  .pricing_section .top_section .title {
+    font-size: 30px;
+  }
+  
+  .feature_section .down_section .card,
+  .Feedback_section .down_section .card,
+  .pricing_section .down_section .card {
+    width: 90%;
+  }
+  
+  .pricing_section .down_section .card .card_content {
+    margin-left: 30px;
+  }
+  
+  .pricing_section .down_section .card .card_content h1 {
+    font-size: 1.8em;
+  }
+  
+  .pricing_section .down_section .card .card_content span {
+    left: 110px;
+  }
+  
+  .footer_section .top_section .Col ul {
+    padding: 0;
+  }
+}
+
+/* Utility classes for better responsive behavior */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,14 +1,341 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Elevvo_Intenship_Tasks/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/Elevvo_Intenship_Tasks/assets/index-DBtPjxGb.js"></script>
-    <link rel="stylesheet" crossorigin href="/Elevvo_Intenship_Tasks/assets/index-DPEF1kEO.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Remix Icon (for simple icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Replace with your CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <!--Start Home_section -->
+      <div class="Home_section">
+        <div class="top_section">
+          <i class="ri-rocket-fill"></i>
+          <p>DataFlow</p>
+          <a class="login">Features</a>
+          <a class="login">Pricing</a>
+          <a class="login">Reviews</a>
+          <i class="ri-contrast-2-line" onclick="toggleTheme()"></i>
+          <button class="started">Get Started Free</button>
+        </div>
+
+        <div class="down_section">
+          <div class="left">
+            <h1>Transform Your <br> <span>Data Analyics</span> <br> Workflow</h1>
+            <p>Streamline your data processing with AI-<br>
+                powered insights, real-time collaboration, and<br>
+                    automated reporting that scales with your <br>business.</p>
+                    <div class="buttons">
+                    <button>Start Free Trial</button>
+                    <button>Watch Demo</button>   
+                 </div>     
+            </div>
+        
+          <div class="right">
+            <img src="/Task_Five/assets/HomeImage.png" alt="Home Image" />
+          </div>
+        </div>
+      </div>
+      <!--End Home_section -->
+
+      <!--Start Feature_section -->
+      <div class="feature_section">
+        <div class="top_section">
+          <p class="title">Powerful Features</p>
+          <p class="Description">
+            Everything you need to superchange your data workflow
+          </p>
+        </div>
+        <div class="down_section">
+          <div class="card">
+            <div class="card_content">
+              <i class="ri-line-chart-line"></i>
+              <h3>Real-time Analytics</h3>
+              <p>
+                Get instant insights with live data visualization and automated trend detection.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_content">
+              <i class="ri-team-fill"></i>
+              <h3>Team Collaboration</h3>
+              <p>
+               Share dashboards, collaborate on reports, and sync across your entire team.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_content">
+              <i class="ri-robot-2-fill"></i>
+              <h3>AI-Powered Insights</h3>
+              <p>
+                Let AI discover patterns and generate actionable recommendations automatically.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_content">
+              <img src="./assets/imgTwo.png" />
+              <h3>Smart Automation</h3>
+              <p>
+                Automate repetitive tasks, reduce manual effort, and free up time for strategic work.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--End Feature_section -->
+      <!--Start Feedback_section -->
+
+      <div class="Feedback_section">
+     
+      <div class="top_section">
+        <p class="title">What Our Users Say</p>
+        <p class="Description">
+         Trusted by thousands of data Professional worldwide.
+        </p>
+      </div>
+
+     
+      <div class="down_section">
+        <!-- {/* Card 1 */} -->
+        <div class="card">
+          <div class="card_content">
+            <img src="./assets/FeedbackOne.png" alt="Feedback One" />
+            <p>
+              "TaskFlow has been a game-changer for <br /> my freelance
+              business. I can finally see all <br /> my projects in one place,
+              and the clean <br /> interface helps me stay focused. I'm <br />
+              getting more done in less time!"
+            </p>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+
+        <!-- {/* Card 2 */} -->
+        <div class="card">
+          <div class="card_content">
+            <img src="./assets/FeedbackTwo.png" alt="Feedback Two" />
+            <p>
+              "We switched our entire marketing team <br /> to TaskFlow.
+              Collaboration is smoother, <br /> and we have clear visibility on
+              who is <br /> doing what. The reporting features are <br />
+              surprisingly powerful."
+            </p>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+
+        <!-- {/* Card 3 */} -->
+        <div class="card">
+          <div class="card_content">
+            <img src="./assets/FeedbackThree.png" alt="Feedback Three" />
+            <p>
+              "As a student, balancing coursework and <br /> personal projects
+              was a nightmare. <br /> TaskFlow's simple design helped me get
+              <br /> organized without a steep learning curve. <br /> Highly
+              recommend!"
+            </p>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_content">
+            <img src="./assets/FeedbackTwo.png" alt="Feedback Two" />
+            <p>
+              "We switched our entire marketing team <br /> to TaskFlow.
+              Collaboration is smoother, <br /> and we have clear visibility on
+              who is <br /> doing what. The reporting features are <br />
+              surprisingly powerful."
+            </p>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End Feedback_section -->
+    <!--Start Pricing_section -->
+    <div class="pricing_section">
+      <!-- {/* Top Section */} -->
+      <div class="top_section">
+        <p class="title">Find the perfect plan</p>
+        <p class="Description">
+          Start for free, or unlock more power and collaboration.
+        </p>
+      </div>
+
+      <!-- {/* Down Section */} -->
+      <div class="down_section">
+        <!-- {/* Free Plan */} -->
+        <div class="card">
+          <div class="card_content">
+            <h4>Starter</h4>
+            <p>
+              For individuals getting started with task <br /> management.
+            </p>
+            <h1>$29</h1>
+            <span>/Month</span>
+            <ul>
+              <li>
+                <i class="ri-check-double-line"></i>Up to 5 team members
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> 10 data sources
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> Basic analytics
+              </li>
+            </ul>
+            <button>Choose Plan</button>
+          </div>
+        </div>
+
+        <!-- {/* Pro Plan */} -->
+        <div class="card">
+          <button class="popular">Most Popular</button>
+          <div class="card_content">
+            <h4>Professional</h4>
+            <p>
+              For power users and small teams who need <br /> more.
+            </p>
+            <h1>$79</h1>
+            <span>/Month</span>
+            <ul>
+              <li>
+                <i class="ri-check-double-line"></i> Up to 25 team members
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> Unlimited data sources
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> AI-powered insights
+              </li>
+            </ul>
+            <button>Choose Plan</button>
+          </div>
+        </div>
+
+        <!-- {/* Team Plan */} -->
+        <div class="card">
+          <div class="card_content">
+            <h4>Enterprise</h4>
+            <p>
+              For larger organizations with advanced security<br> needs
+              management.
+            </p>
+            <h1>$199</h1>
+            <span>/Month</span>
+            <ul>
+              <li>
+                <i class="ri-check-double-line"></i> Unlimited team members
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> Advanced security
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> 24/7 support
+              </li>
+            </ul>
+            <button>Get started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Pricing_section -->
+    <!--Start CallToAction_section -->
+    <div class="call_to_action">
+        <div class="top">
+            <h1 class="contact">
+                Contact US
+            </h1>
+            <p>We are here any time.</p>
+        </div>
+
+         <div class="down">
+          
+            
+            <input type="email" class="email_input" id="exampleFormControlInput1" placeholder=" name@example.com">
+            <input type="number" class="email_input" id="exampleFormControlInput1" placeholder=" Enter your number">
+            <textarea class="text_input" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button>Submit</button>
+         </div>
+    </div>
+  </div>
+    <!--End CallToAction_section -->
+    <!--Strart Footer_section -->
+    <div class="footer_section">
+        <div class="top_section">
+          <div class="logo">
+            <i class="ri-rocket-fill"></i>
+          <p class="title">DataFlow</p>
+            <p class="des">The simplest way to organize <br>your work and life.</p>
+          </div>
+
+          <div class="Col">
+            <ul>
+              <li>PRODUCT</li>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Integrations</li>
+              <li>Updates</li>
+            </ul>
+          </div>
+          <div class="Col">
+            <ul>
+              <li>COMPANEY</li>
+              <li>About us</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="Col">
+            <ul>
+              <li>LEGAL</li>
+              <li>Privacy</li>
+              <li>Teams</li>
+              <li>security</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div class="left_section">
+          <div class="right_section">
+            <p>@ 2024 TaskFlow. Inc All right reserved</p>
+          </div>
+          <div class="left_section">
+            <img src="./assets/SocialIcons.png"></img>
+          </div>
+        </div>
+    </div>
+    <!--End Footer_section -->
+     <script src="script.js"></script>
+</body>
